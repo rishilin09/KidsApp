@@ -1,0 +1,70 @@
+ion-content {
+    --ion-background-color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.commet {
+    font-size: 5em;
+}
+
+ion-title.title {
+    --color: #EF3349;
+    font-family: YO-R;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.proImg {
+    height: 20em;
+    width: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.answer-container {
+    display: flex;
+    align-items: center;
+    margin: 2em;
+}
+
+.answer-name,
+.answer-selected {
+    margin-right: 10px;
+    font-family: YO-R;
+    text-align: center;
+}
+
+.answer-name {
+    color: #f71111;
+}
+
+.answer-selected {
+    color: #aa0ee2;
+}
+
+.detialCard {
+    border: 0.5em #EF3349 outset;
+    border-radius: 2em;
+}
+
+.name {
+    text-align: center;
+    font-size: 3em;
+    font-family: DScBold;
+    font-weight: 700;
+    margin: 1em;
+    color: rgb(53, 12, 140);
+}

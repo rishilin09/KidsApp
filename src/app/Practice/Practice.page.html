@@ -1,0 +1,62 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <div class="logo">
+      <ion-icon class="commet" src="./assets/svg/commet.svg"></ion-icon>
+      <ion-title class="title">Kid Kurious</ion-title>
+    </div>
+  </div>
+  <ion-title class="welcome">Welcome back!!</ion-title>
+  <ion-title class="kid">Kiddo</ion-title>
+  <div>
+    <p class="game-title">GUESS THE NAME OF THE ANIMAL</p>
+    <ion-img style="height: 100px; margin-top: -200px; display: float; margin-left: 18em; "
+      src="./assets/svg/think.svg"></ion-img>
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-card class="card">
+          <ion-card-header>
+            <ion-card-subtitle>Score: {{ score }}</ion-card-subtitle>
+            <ion-card-title>{{ selectedString }}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-img src="{{currentAnimal.img}}"></ion-img>
+            <div class="listChar">
+              <ion-list>
+                <ion-button class="alphabetButton" *ngFor="let letter of currentAnimal.letters" [ngClass]="{
+                  'selected': isSelectedButton(letter),
+                  'deselected': !isSelectedButton(letter)
+                }" (click)="toggleButtonSelection(letter)">
+                  <ion-label>{{ letter }}</ion-label>
+                </ion-button>
+              </ion-list>
+            </div>
+            <ion-button expand="full" (click)="checkAnswer()">Check</ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-title class="error" *ngIf="showError">{{errorMsg}}</ion-title>
+  <ion-card *ngIf="showFeedback">
+    <ion-card-header>
+      <ion-card-title>{{feedbackMsg}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button expand="block" (click)="nextAnimal()">Next
+        Animal</ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngIf="showScore">
+    <ion-card-header>
+      <ion-card-title>Your Score</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p class="result">You answered {{score/20}} out of {{animals.length}} questions
+        correctly.</p>
+      <p class="score">Your score is: {{score}}</p>
+      <ion-button expand="block" (click)="restartQuiz()">Restart Quiz</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

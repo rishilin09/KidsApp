@@ -1,0 +1,25 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <div class="logo">
+      <ion-icon class="commet" src="./assets/svg/commet.svg"></ion-icon>
+      <ion-title class="title">Kid Kurious</ion-title>
+    </div>
+  </div>
+  <div class="container">
+    <div class="proImg">
+      <ion-img src="./assets/png/mickey.png"></ion-img>
+    </div>
+  </div>
+  <p class="name">{{name}}</p>
+  <div class="container">
+    <ion-card class="detialCard">
+      <div class="answered" *ngFor="let detail of details">
+        <div class="answer-container">
+          <ion-title class="answer-name">{{detail.key}}</ion-title>
+          <ion-title class="answer-selected">{{detail.value}}</ion-title>
+        </div>
+      </div>
+    </ion-card>
+  </div>
+
+</ion-content>

@@ -1,0 +1,128 @@
+ion-content {
+    --ion-background-color: #fff;
+}
+
+
+ion-title.welcome {
+    --color: #136EF3;
+    text-align: left;
+    font-size: 3em;
+    margin-top: 0.5em;
+    font-family: DScBold;
+}
+
+ion-title.kid {
+    --color: #F25B0A;
+    text-align: left;
+    font-size: 2em;
+    margin-top: 0.5em;
+    font-weight: 700;
+    font-family: GreatVibes;
+}
+
+ion-title.title {
+    --color: #EF3349;
+    font-family: YO-R;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.container,
+.listChar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.commet {
+    font-size: 5em;
+}
+
+p.game-title {
+    font-family: YO-R;
+    font-size: 2em;
+    font-weight: 600;
+    margin: 2em;
+    color: #FFCF25
+}
+
+p.score,
+p.result {
+    text-align: center;
+    font-size: 3em;
+
+}
+
+p.result {
+    color: #EF3349;
+    font-family: GreatVibes;
+}
+
+p.score {
+    color: #3e109a;
+    font-family: YO-R;
+}
+
+ion-card-title,
+ion-title {
+    font-family: YO-R;
+}
+
+ion-card-header {
+    text-align: center;
+}
+
+ion-card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+ion-item {
+    --padding-start: 0;
+    --padding-end: 0;
+    --ion-color-primary: var(--ion-color-primary-shade);
+}
+
+ion-input {
+    --padding-start: 5px;
+    --padding-end: 5px;
+}
+
+ion-button {
+    margin-top: 10px;
+}
+
+ion-title.error {
+    --color: #F25B0A;
+    font-family: YO-R;
+}
+
+.alphabetButton {
+    margin: 0.5em;
+}
+
+.alphabetButton {
+    --background-color: grey;
+    --color: white;
+}
+
+.alphabetButton.selected {
+    --background: green;
+}
+
+.alphabetButton.deselected {
+    --background: #ff0000;
+}
+
+.card {
+    border: 1em solid #F25B0A;
+    margin-top: 5em;
+}

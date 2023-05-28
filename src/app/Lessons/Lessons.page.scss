@@ -1,0 +1,58 @@
+ion-content {
+    --ion-background-color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.commet {
+    font-size: 5em;
+}
+
+ion-title.title {
+    --color: #EF3349;
+    font-family: YO-R;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.alphabet,
+.number {
+    text-align: center;
+    color: #3f855e;
+    font-family: DScMedium;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.alphabets,
+.numbers {
+    text-align: center;
+    color: #5a0be3;
+    font-family: YO-R;
+    font-size: 2em;
+    padding: 0.5em;
+}
+
+.alphaCard,
+.numCard {
+    border: 1em groove;
+    border-radius: 5em;
+}
+
+.alphaCard {
+    border-color: #EF3349;
+}
+
+.numCard {
+    border-color: #e7cb13;
+}

@@ -1,0 +1,38 @@
+<ion-content [fullscreen]="true">
+  <ion-img class="completeImg" src="./assets/png/complete-logo.png"></ion-img>
+  <div class="cardDiv">
+    <ion-card class="card">
+      <ion-card-content>
+        <ion-card-header>
+          <ion-card-title>GOOD JOB!!</ion-card-title>
+          <p class="kid">Kiddo</p>
+        </ion-card-header>
+        <ion-card-title>Here's a reward for you!!</ion-card-title>
+        <div class="reward">
+          <ion-img class="rewardImg" src="https://img.icons8.com/stickers/100/candy.png"></ion-img>
+          <ion-card-title style="font-family: GreatVibes; font-size: 3em;">20</ion-card-title>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <ion-title *ngIf="isEmpty()" class="hist">History</ion-title>
+  <div class="answersDiv" *ngIf="isEmpty()">
+    <ion-card class="histCard" *ngFor="let item of history">
+      <ion-card-content>
+        <ion-card-header>
+          <ion-card-title>{{item.date.getDate()}}/{{item.date.getMonth()}}/{{item.date.getFullYear()}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-title>Questions and Answers given for it</ion-card-title>
+        <div class="answered" *ngFor="let answer of item.answers">
+          <div class="answer-container">
+            <ion-title class="answer-name">{{answer.name}}</ion-title>
+            <ion-title class="answer-selected">{{answer.selected}}</ion-title>
+          </div>
+        </div>
+        <div class="result">
+          <p class="desc">{{item.desc}}</p>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

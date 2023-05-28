@@ -24,3 +24,28 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+@font-face {
+    font-family: DScBold;
+    src: url('./assets/fonts/DancingScript-Bold.ttf');
+}
+
+@font-face {
+    font-family: DScMedium;
+    src: url('./assets/fonts/DancingScript-Medium.ttf');
+}
+
+@font-face {
+    font-family: DScRegular;
+    src: url('./assets/fonts/DancingScript-Regular.ttf');
+}
+
+@font-face {
+    font-family: GreatVibes;
+    src: url('./assets/fonts/GreatVibes-Regular.ttf');
+}
+
+@font-face {
+    font-family: YO-R;
+    src: url('./assets/fonts/YatraOne-Regular.ttf');
+}

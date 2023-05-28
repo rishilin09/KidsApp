@@ -1,0 +1,105 @@
+ion-content {
+    --background: #EF3349;
+    --background-image: none;
+}
+
+.completeImg {
+    position: relative;
+    margin-top: 2.5em;
+    z-index: 1;
+}
+
+.cardDiv,
+.answersDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    margin-top: -2.5em;
+    text-align: center;
+}
+
+.card,
+.histCard {
+    background-color: #FFF5D1;
+    border: 0.5em #6969b3 outset;
+    border-radius: 2.5em;
+}
+
+.card {
+    width: 25em;
+    height: 25em;
+}
+
+ion-card-title {
+    font-size: 2.2em;
+    font-family: YO-R;
+    color: #282828;
+}
+
+ion-title.hist {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+    font-family: GreatVibes;
+    color: #282828;
+    margin: 1em;
+}
+
+ion-title {
+    margin: 0.5em;
+}
+
+p {
+    color: #EF3349;
+    font-family: DScBold;
+}
+
+p.kid {
+    font-size: 3em;
+}
+
+p.desc {
+    font-size: 2em;
+}
+
+.reward {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+
+}
+
+.rewardImg {
+    height: 5em;
+    width: 5em;
+    margin-right: 2em;
+}
+
+.answered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.answer-container {
+    display: flex;
+    align-items: center;
+}
+
+.answer-name,
+.answer-selected {
+    margin-right: 10px;
+    font-family: YO-R;
+}
+
+.answer-name {
+    color: #97ef33;
+}
+
+.answer-selected {
+    color: #6721c9;
+}
